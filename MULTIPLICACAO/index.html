@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Desafio da Tabuada do professor João Brandão! ✖️</h1>
+        <p>Resolva o máximo de multiplicações antes que o tempo acabe!</p>
+        <div id="game">
+            <p id="timer">⏳ Tempo: <span id="time">60</span>s</p>
+            <p id="score">⭐ Pontos: <span id="points">0</span></p>
+            <div id="question"></div>
+            <input type="number" id="answer" placeholder="Digite sua resposta">
+            <button onclick="checkAnswer()">Responder ✅</button>
+        </div>
+        <button id="start" onclick="startGame()">Iniciar Jogo ▶️</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
